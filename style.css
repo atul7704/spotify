@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+}
+nav{
+   background-color:black;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+nav ul li{
+    gap: 4px;
+    color: white;
+}
+.brand img{
+    width: 44px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+.container{
+    min-height: 72vh;
+   background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+   background-image: url('bg.jpg');
+   background-size: cover;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.icons{
+    margin-top: 14px;
+}
+.icons svg{
+    cursor: pointer;
+}
+#myprogressbar{
+      width: 80vw;
+      cursor: pointer;
+}
+.songitem{
+    display: flex;
+    height: 50px;
+    background-color: white;
+    width: 80%;
+    color: black;
+    margin: 12px 0;align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 34px;
+}
+.songitem img{
+     width: 43px;
+     margin: 0 23px;
+     border-radius: 50%;
+}
+.timestamp{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.songinfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.songinfo img{
+  opacity: 0;
+   transition: opacity 0.4s ease-in;
+
+}
+
+@media (max-width: 600px) {
+    .songitem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
